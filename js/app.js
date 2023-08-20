@@ -41,14 +41,11 @@ function applyForDiscound() {
     const discountAmount = (total * 20) / 100;
     const discountedPrice = total - discountAmount;
 
-    document.getElementById("discound-price").innerText = discountAmount.toFixed(2);
-    document.getElementById("grand-total").innerText = discountedPrice.toFixed(2);
+    document.getElementById("discound-price").innerText =
+      discountAmount.toFixed(2);
+    document.getElementById("grand-total").innerText =
+      discountedPrice.toFixed(2);
+  } else {
+    alert("Enter a valid cupon code");
   }
-  else{
-    alert('Enter a valid cupon code')
-  }
-}
-
-function goHome() {
-  window.location.reload();
 }
