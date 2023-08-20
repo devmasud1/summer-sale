@@ -44,6 +44,9 @@ function applyForDiscound() {
     document.getElementById("discound-price").innerText = discountAmount.toFixed(2);
     document.getElementById("grand-total").innerText = discountedPrice.toFixed(2);
   }
+  else{
+    alert('Enter a valid cupon code')
+  }
 }
 
 function goHome() {
